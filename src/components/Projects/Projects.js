@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
+import tiktik from "../../Assets/Projects/tiktik.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
@@ -15,20 +15,41 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Recent <strong className="purple">Works </strong>.
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I've worked on recently by myself. <br/> You can check my <strong className="purple">Real Company Experience</strong> from my CV Form.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={emotion}
+              isBlog={false}
+              title="Meeting.Io"
+              description="This is the video call web app like 'google meet'. You can screen share, send msg and you can use all the same function like google meet. "
+              ghLink="https://github.com/AyeMyintHtet/v-vcall-testt"
+              demoLink='https://v-vcall-testt.vercel.app/'
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tiktik}
+              isBlog={false}
+              title="Tik Tik - Inspired From Tik Tok"
+              description="This Project was inspired from Tik Tok. When the user logged in, user can upload video, give like, give comment etc. If not logged in, the user can only view the video and profile. "
+              ghLink="https://github.com/AyeMyintHtet/toktik-clone"
+              demoLink="https://toktik-clone-v2.vercel.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="CRUD project"
+              description="This is CRUD Project. For the frontend used ReactJS and for the backend used NodeJS,ExpressJS and for the database used Mysql. This project is admin panel that listing a people who can speak how many languages."
+              ghLink="https://github.com/AyeMyintHtet/listing-who-can-speak-many-languages"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
@@ -38,8 +59,8 @@ function Projects() {
               isBlog={false}
               title="Bits-0f-C0de"
               description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              ghLink="https://github.com/AyeMyintHtet/bits-of-code"
+              demoLink="https://bits-of-code-kappa.vercel.app/"
             />
           </Col>
 
@@ -47,21 +68,10 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="QuickNote.io"
+              description="The purpose of this project is the user make note easily. In that project, you can create, marked success and delete todos. And then, you can create Nested Todos(recursive function) also."
+              ghLink="https://github.com/AyeMyintHtet/nested-todos-list"
+              demoLink="https://nested-todos-list.vercel.app/"              
             />
           </Col>
 
@@ -69,24 +79,15 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Incompatible Food"
+              description="This project is checking the incompatible food(Focus on Code)"
+              ghLink="https://github.com/AyeMyintHtet/incompatibleFood"
+              demoLink="https://incompatible-food-theta.vercel.app/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-            />
-            
-          </Col>
+         
+
         </Row>
       </Container>
     </Container>

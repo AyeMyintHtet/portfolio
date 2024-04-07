@@ -8,29 +8,13 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Aye Myint Htet </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+            Hi Everyone, I am <span className="purple">Aye Myint Htet </span>. I am <span className="purple">currently seeking the developer position that would fit my experiences.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
+            {/* I am currently employed as a software developer at Juspay. */}
+            {/* <br /> */}
+            Over 5 of experience in ReactJS frontend development, working on diverse projects that have honed my skills in<span className="purple"> React,JavaScript,Typescript,NextJs,ExpressJS and Nodejs etc..</span> Demonstrated success in leading and collaborating with cross-functional teams to deliver high-quality, user-friendly applications within deadlines. <br/> Proven ability to analyze project requirements, propose innovative solutions, and implement efficient and scalable frontend solutions. Strong communication skills, both verbal and written, enabling effective collaboration with team members and clients.. <br/><br/>
           </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-          </ul>
-
+          
           <p style={{ color: "rgb(155 126 172)" }}>
             "Strive to build things that make a difference!"{" "}
           </p>
