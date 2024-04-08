@@ -22,16 +22,7 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           
-        <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Meeting.Io"
-              description="This is the video call web app like 'google meet'. You can screen share, send msg and you can use all the same function like google meet. "
-              ghLink="https://github.com/AyeMyintHtet/v-vcall-testt"
-              demoLink='https://v-vcall-testt.vercel.app/'
-            />
-          </Col>
+        
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={tiktik}
@@ -86,7 +77,16 @@ function Projects() {
             />
           </Col>
 
-         
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={emotion}
+              isBlog={false}
+              title="Meeting.Io"
+              description="This is the video call web app like 'google meet'. You can screen share, send msg and you can use all the same function like google meet. "
+              ghLink="https://github.com/AyeMyintHtet/v-vcall-testt"
+              demoLink='https://v-vcall-testt.vercel.app/'
+            />
+          </Col>
 
         </Row>
       </Container>
